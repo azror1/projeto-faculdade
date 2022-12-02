@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: rgb(245, 226, 226);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+  }
+  
+  main {
+    background: url("/img/boxe.png") no-repeat center center;
+    background-size: 112px;
+    height: 92vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /* Rodapé */
+
+  footer img{
+      width: 40px;
+      height: 40px;
+  }
+
+  footer{
+      display: flex;
+      justify-content: center;
+      background: #23232e;
+  }
+
+  footer a{
+      margin: 20px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+  }
+
+  footer p {
+      margin-top: 2px;
+  }
+
+  /* imagem escritório */
+  
+.imagem-01{
+    padding: 60px;
+    position: absolute;
+    top: 1180px;
+    left: -20px;
+}
+
+h1{
+    position: absolute;
+    left: 620px; 
+    top: 1090px;
+    font-size: 80px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    color: rgb(75, 60, 60);
+}
+
+main{
+    background-color: rgb(243, 241, 241);
+    color: #fff;
+    
+}
+
+.conteudo{
+    display: table;
+    
+}
+
+.imagem{
+    display: table-cell;
+    float: right;
+}
+
+.texto{
+    display: table-cell;
+   
+}
+
+.salve{
+    position: absolute;
+    top: 1250px;
+    right: 1100px;
+    font-size: 30px;
+    color: rgb(16, 17, 17);
+}
+
+/* Parte de Contato*/
+
+.titulo-contato{
+    text-align: center;
+    left: 500px;
+    color: black
+}
+
+.imagem-contato{
+    padding: 60px;
+    position: absolute;
+    top: 1180px;
+    left: 785px;
+}
+
+.email-contatos{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1300px;
+    left: 185px;
+    
+}
+
+.insta-contatos{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1400px;
+    left: 185px;
+}
+
+.face-contatos{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1500px;
+    left: 185px;
+}
+
+.linkedin-contatos{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1600px;
+    left: 185px;
+}
+
+.ytb-contatos{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1700px;
+    left: 185px;
+}
+
+.twt-contatos{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1800px;
+    left: 185px;
+}
+
+.qgmail{
+    font-size: 30px;
+    position: absolute;
+    top: 1315px;
+    left: 268px;
+    color: black
+}
+
+.qinsta{
+    font-size: 30px;
+    position: absolute;
+    top: 1415px;
+    left: 268px;
+    color: black
+}
+
+.qface{
+    font-size: 30px;
+    position: absolute;
+    top: 1515px;
+    left: 268px;
+    color: black
+}
+
+.qlinkedin{
+    font-size: 30px;
+    position: absolute;
+    top: 1615px;
+    left: 268px;
+    color: black
+}
+
+.qytb{
+    font-size: 30px;
+    position: absolute;
+    top: 1715px;
+    left: 268px;
+    color: black
+}
+
+.qtwt{
+    font-size: 30px;
+    position: absolute;
+    top: 1815px;
+    left: 268px;
+    color: black
+}
+
+/* Área de Cadastro */
+
+.cadastrese{
+  font-size: 100px;
+  background-color: rgb(92, 86, 86);
+  position: absolute;
+  top: 160px;
+  left: 300px;
+  background-image: -moz-element(92,86);
+}
+
+.imagemcadastro{
+  position: absolute;
+  top: 250px;
+  left: 950px;
+  width: 900px;
+  height: 650px;
+  background-color: rgb(20, 19, 19);
+}
+
+.cadastro-login{
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 15px;
+  background-color: #c7c7e4;
+}
+
+.cadastro-sobrenome{
+  position: absolute;
+  top: 400px;
+  left: 300px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 15px;
+  background-color: #c7c7e4;
+}
+
+.cadastro-email{
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 15px;
+  background-color: #c7c7e4;
+}
+
+.cadastro-senha{
+  position: absolute;
+  top: 600px;
+  left: 300px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 15px;
+  background-color: #c7c7e4;
+}
+
+.cadastro-confirme{
+  position: absolute;
+  top: 700px;
+  left: 300px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 15px;
+  background-color: #c7c7e4;
+}
+
+.cadastro-enviar{
+  position: absolute;
+  top: 800px;
+  left: 300px;
+  width: 300px;
+  height: 40px;
+  background-color: darkgrey;
+}
+
+/* Nosso time */
+
+.time{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 150px;
+  background-color: darkgrey;
+}
+
+.avatar1{
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+}
+
+.membro1{
+  position: absolute;
+  top: 600px;
+  left: 200px;
+  font-size: 30px;
+}
+
+.ra1{
+  position: absolute;
+  top: 650px;
+  left: 180px;
+  font-size: 30px;
+}
+
+.avatar2{
+  position: absolute;
+  top: 300px;
+  left: 480px;
+  width: 300;
+  height: 300px;
+}
+
+.membro2{
+  position: absolute;
+  top: 610px;
+  left: 580px;
+  font-size: 30px;
+}
+
+.ra2{
+  position: absolute;
+  top: 650px;
+  left: 560px;
+  font-size: 30px;
+}
+
+.avatar3{
+  position: absolute;
+  top: 300px;
+  left: 830px;
+  width: 300px;
+  height: 300px;
+}
+
+.membro3{
+  position: absolute;
+  top: 610px;
+  left: 920px;
+  font-size: 30px;
+}
+
+.ra3{
+  position: absolute;
+  top: 650px;
+  left: 900px;
+  font-size: 30px;
+}
+
+.avatar4{
+  position: absolute;
+  top: 300px;
+  left: 1190px;
+  width: 300px;
+  height: 300px;
+}
+
+.membro4{
+  position: absolute;
+  top: 610px;
+  left: 1270px;
+  font-size: 30px;
+}
+
+.ra4{
+  position: absolute;
+  top: 650px;
+  left: 1250px;
+  font-size: 30px;
+}
+
+.avatar5{
+  position: absolute;
+  top: 300px;
+  left: 1530px;
+  width: 300px;
+  height: 300px;
+}
+
+.membro5{
+  position: absolute;
+  top: 610px;
+  left: 1620px;
+  font-size: 30px;
+}
+
+.ra5{
+  position: absolute;
+  top: 650px;
+  left: 1600px;
+  font-size: 30px;
+}
+
+.avatar6{
+  position: absolute;
+  top: 720px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+}
+
+.membro6{
+  position: absolute;
+  top: 1030px;
+  left: 190px;
+  font-size: 30px;
+}
+
+.ra6{
+  position: absolute;
+  top: 1070px;
+  left: 170px;
+  font-size: 30px;
+}
+
+.avatar7{
+  position: absolute;
+  top: 720px;
+  left: 480px;
+  width: 300;
+  height: 300px;
+}
+
+.membro7{
+  position: absolute;
+  top: 1030px;
+  left: 570px;
+  font-size: 30px;
+}
+
+.ra7{
+  position: absolute;
+  top: 1070px;
+  left: 550px;
+  font-size: 30px;
+}
+
+.avatar8{
+  position: absolute;
+  top: 720px;
+  left: 830px;
+  width: 300px;
+  height: 300px;
+}
+
+.membro8{
+  position: absolute;
+  top: 1030px;
+  left: 920px;
+  font-size: 30px;
+}
+
+.ra8{
+  position: absolute;
+  top: 1070px;
+  left: 900px;
+  font-size: 30px;
+}
+
+.avatar9{
+  position: absolute;
+  top: 720px;
+  left: 1190px;
+  width: 300px;
+  height: 300px;
+}
+
+.membro9{
+  position: absolute;
+  top: 1030px;
+  left: 1280px;
+  font-size: 30px;
+}
+
+.ra9{
+  position: absolute;
+  top: 1070px;
+  left: 1260px;
+  font-size: 30px;
+}
+
+.avatar10{
+  position: absolute;
+  top: 720px;
+  left: 1530px;
+  width: 300px;
+  height: 300px;
+}
+
+.membro10{
+  position: absolute;
+  top: 1030px;
+  left: 1620px;
+  font-size: 30px;
+}
+
+.ra10{
+  position: absolute;
+  top: 1070px;
+  left: 1600px;
+  font-size: 30px;
+}
+
+/* Quem somos */
+
+.qmSomos{
+  background-color: darkgrey;
+}
+
+.txtQmSomos{
+  background-color: darkgrey;
+  position: absolute;
+  font-size: 30px;
+  top: 1250px;
+  padding: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.imgQmSomos{
+  position: relative;
+  height: 600px;
+  width: 600px;
+  top: 170px;
+  background-color: darkgray;
+}
+
+.Missao{
+  position: absolute;
+  top: 1700px;
+  left: 550px;
+  font-size: 100px;
+}
+
+.txtMissao{
+  position:relative;
+  top: 820px;
+  font-size: 30px;
+  background-color: darkgray;
+}
+
+/* Comparador de viagens */
+
+.cvTitle{
+    position: absolute;
+    top: 120px;
+    left: 150px;
+}
+
+.cvImg{
+  position: relative;
+  left: 1000px;
+  top: 200px;
+  width: 700px; 
+  height: 600px;
+}
+
+.seloAndroid{
+  position: relative;
+  left: -600px;
+  top: -100px;
+}
+
+.seloApple{
+  position: relative;
+  left: -1190px;
+  top: 100px;
+}
